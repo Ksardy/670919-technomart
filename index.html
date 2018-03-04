@@ -29,14 +29,30 @@
           <li class="private cabinet">Личный кабинет</li>
         </ul>
         <ul class="site-navigation">
-          <li><a class="main-header-logo">Техномарт</a></li>
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="company.html">Компания</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="news.html">Новости</a></li>
-          <li><a href="special-offers.html">Спецпредложения</a></li>
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li class="link-navigation-logo">
+          <a class="main-header-logo">Техномарт</a>
+          </li>
+          <li class="link-navigation">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="link-navigation">
+            <a href="company.html">Компания</a>
+          </li>
+          <li class="link-navigation">
+            <a href="catalog.html">Каталог</a>
+          </li>
+          <li class="link-navigation">
+            <a href="news.html">Новости</a>
+          </li>
+          <li class="link-navigation">
+            <a href="special-offers.html">Спецпредложения</a>
+          </li>
+          <li class="link-navigation">
+            <a href="delivery.html">Доставка</a>
+          </li>
+          <li class="link-navigation">
+            <a href="contacts.html">Контакты</a>
+          </li>
         </ul>
       </nav>
       <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
@@ -48,17 +64,25 @@
       <section class="main-offers">
         <h2 class="visual hidden">Предложения магазина</h2>
         <ul>
-          <li><a href="material.html"><h3>Материалы</h3> на любой вкус</a></li>
-          <li><a href="instrumental.html"><h3>Инструмент</h3> на все случаи</a></li>
-          <li><a href="teh.html"><h3>Техника</h3> для стройки</a></li>
-          <li><a href="blackprice.html"><h3>Скидки</h3> 50% на 350 товаров</a></li>
-          <li><a href="delivered.html"><h3>Доставка</h3> бесплатно</a></li>
+          <!--Ссылки только кнопки-->
+          <li><h3>Материалы</h3><a href="material.html">на любой вкус</a></li>
+          <li><h3>Инструмент</h3> <a href="instrumental.html">на все случаи</a></li>
+          <li><h3>Техника</h3> <a href="teh.html">для стройки</a></li>
+          <li><h3>Скидки</h3><a href="blackprice.html">50% на 350 товаров</a></li>
+          <li><h3>Доставка</h3><a href="delivered.html">бесплатно</a></li>
         </ul>
         <div class="main-slide">
-          <figure class="main-slide-instrument">
-            <img src="#" height="270" width="625">
-            <figcaption><b>дрели</b>Соседям на радость!</figcaption>
-          </figure>
+          <!--Слайдер из 2 слайдов-->
+          <ul class="main-slide-instrument">
+            <li class="slide">
+              <img src="#" height="270" width="625" alt="Дрель">
+              <p><b>дрели</b>Соседям на радость!</p>
+            </li>
+            <li class="slide">
+              <img src="#" height="270" width="625" alt="">
+              <p><!--Текст второго слайда--></p>
+            </li>
+          </ul>
           <span class="button instrument-back"></span>
           <span class="button instrument-next"></span>
           <!--Форма ввода,два маленьких прееключателя-->
@@ -66,7 +90,7 @@
         </div>
       </section>
       <section class="main-shop">
-        <div class="announcement-shop">
+        <div class="announcement-post">
           <h2 class="shop-content">Популярные товары</h2>
           <p class="button"><a href="#">все популярные товары</a></p>
         </div>
@@ -111,7 +135,7 @@
         </ul>
       </section>
       <section class="main-brand">
-        <div class="announcement-brand">
+        <div class="announcement-post">
           <h3 class="shop-content">Популярные производители</h3>
           <p class="button"><a href="#">все производители</a></p>
         </div>
