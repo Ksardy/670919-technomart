@@ -7,7 +7,10 @@
   <body>
     <header class="main-header">
       <section class="main-shop-menu">
-        <!--Тут форма поиска-->
+        <h2 class="visual-hidden">Меню пользователя</h2>
+        <form class="main-shop-menu_input-search">
+                <input name="mainsearch" type="search" value="Поиск">
+        </form>
         <p class="main-marks">
           <a href="bookmarks.html">Закладки</a>
           <span class="numb">0</span>
@@ -19,13 +22,14 @@
         <p class="checkout"><a href="checkout.html">Оформить заказ</a></p>
       </section>
       <nav class="main-navigation">
+        <h2 class="visual-hidden">Интерфейс навигации</h2>
         <ul class="user-navigation">
-          <li class="login-link">Войти</li>
-          <li class="registr-link">Регистрация</li>
+          <li class="login-link"> <a href="login.html">Войти</a></li>
+          <li class="registr-link"> <a href="#">Регистрация</a></li>
           <!--После входа в личный кабинет-->
-          <li class="private name">Равшан Джамшутович</li>
-          <li class="private checkout">Мои заказы</li>
-          <li class="private cabinet">Личный кабинет</li>
+          <li class="private name"> <a href="#">Равшан Джамшутович</a></li>
+          <li class="private checkout"> <a href="#">Мои заказы</a></li>
+          <li class="private cabinet"> <a href="#">Личный кабинет</a></li>
         </ul>
         <ul class="site-navigation">
           <li class="link-navigation-logo">
@@ -61,32 +65,72 @@
     <main class="container">
       <h1 class="catalog">Перфораторы</h1>
       <ul class="breadcrumbs">
-        <li><a href="index.html"></a></li>
+        <li class=""><a href="index.html"></a></li>
         <li><a href="catalog.html">каталог</a></li>
         <li><a href="instrumental.html">инструмент</a></li>
         <li class="breadcrumbs-current">перфораторы</li>
       </ul>
       <section class="filters">
-        <h2 class="visual-hidden">Фильтры товаров</h2>
-        <div>
-          <h3>Сортировка</h3>
-          <!--форма ввода-->
-        </div>
-        <div>
-          <h3>фильтр</h3>
-          <!--форма ввода-->
-        </div>
-        <div>
-          <h3>цена</h3>
-          <!--форма ввода-->
-        </div>
-        <div>
-          <h3>производители</h3>
-          <!--форма ввода-->
-        </div>
-        <div>
-          <h3>питание</h3>
-          <!--форма ввода-->
+        <h2 class="filter-stile">Фильтр:</h2>
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <div class="price-filter">
+            <h3>Цена</h3>
+            <!--Как-то реализую ползунок с двумя кнопками-->
+            <span class="price-filter-button">
+              0 <input type="range" min="0" max="3000" name="pricerange"> 3000 <br>
+              <output name="pricemin">0</output> -
+              <output name="pricemax">3000</output>
+            </span>
+          </div>
+          <fieldset>
+            <legend>Производители:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox"
+                  type="checkbox" name="BOSCH" id="BOSCH" checked>
+                <label for="BOSCH">BOSCH</label>
+              </li>
+              <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox"
+                type="checkbox" name="Интерскол" id="Интерскол">
+                <label for="Интерскол">Интерскол</label>
+              </li>
+              <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox"
+                type="checkbox" name="MAKITA" id="MAKITA" checked>
+                <label for="MAKITA">MAKITA</label>
+              </li>
+              <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox"
+                type="checkbox" id="DEWALT" name="DEWALT">
+                <label for="DEWALT">DEWALT</label>
+              </li>
+              <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox"
+                type="checkbox" name="HITACHI" id="HITACHI">
+                <label for="HITACHI">HITACHI</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Питание:</legend>
+            <ul>
+              <li class="filter-option"><input class="visually-hidden filter-input filter-input-radio"
+                type="radio" name="food" id="akkum" value="food1" checked>
+                <label for="akkum">Аккамуляторные</label>
+              </li>
+              <li class="filter-option"><input class="visually-hidden filter-input filter-input-radio"
+                type="radio" id="net" name="food" value="food2">
+                <label for="net">Сетевые</label>
+            </ul>
+          </fieldset>
+          <button class="filter-button" type="submit">Показать</button>
+        </form>
+        <div class="filter-stile">
+          <h2>Сортировка:</h2>
+          <ul>
+            <li class="filter-sort-option"><button class="filter-sort-button" type="button">По цене</button></li>
+            <li class="filter-sort-option"><button class="filter-sort-button" type="button">По типу</button></li>
+            <li class="filter-sort-option"><button class="filter-sort-button" type="button">По функционалу</button></li>
+            <li class="filter-sort-option"><button class="filter-sort-button" type="button" aria-label="верх"></button></li>
+            <li class="filter-sort-option"><button class="filter-sort-button" type="button" aria-label="низ"></button></li>
+          </ul>
         </div>
       </section>
       <section class="catalog-item">
@@ -183,12 +227,13 @@
           будут совмещены отбойный молоток и ударная дрель.
         </p>
       </div>
-    </main>
+     </main>
     <footer class="main-footer">
       <section class="top-main-footer">
+        <h2 class="visual-hidden">Навигация</h2>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55 </p>
         <ul class="site-navigation">
-          <li><a class="main-header-logo">Техномарт</a></li>
+          <li><a class="main-header-logo" href="index.html">Техномарт</a></li>
           <li><a href="index.html">Главная</a></li>
           <li><a href="company.html">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
@@ -205,12 +250,13 @@
       <section class="low-main-footer">
         <div class="footer-social">
           <ul>
-            <li><a class="social-buttom" href="#">Вконтакте</a></li>
-            <li><a class="social-buttom" href="#">Фейсбук</a></li>
-            <li><a class="social-buttom" href="#">Инстаграм</a></li>
+            <li><a class="social-button" href="#">Вконтакте</a></li>
+            <li><a class="social-button" href="#">Фейсбук</a></li>
+            <li><a class="social-button" href="#">Инстаграм</a></li>
           </ul>
         </div>
         <div class="footer-link">
+          <h3 class="visual-hidden">Копирайт</h3>
           <p>Разработано-</p>
           <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           <p>Обратная связь:</p>
@@ -219,13 +265,13 @@
         <p>© 2010–2017 Компания «Техномарт» Все права защищены</p>
       </section>
     </footer>
-    <section class="modal shop">
+    <section class="modal-shop">
       <h2>Товар добавлен в корзину!</h2>
-      <ul>
-        <li><a class="buttoт" href="#">оформить заказ</a></li>
+      <ul class="modal-shop button">
+        <li><a class="button" href="#">оформить заказ</a></li>
           <!--продолжить покупки возвращает на текущую страницу-->
-        <li><a class="current-button">продолжить покупки</a></li>
-         <!--Форма ввода с закрытием страницы-->
+        <li><a class="current-button">Продолжить покупки</a></li>
+        <li><button class="modal-close" type="button">Закрыть</button></li>
       </ul>
     </section>
   </body>
