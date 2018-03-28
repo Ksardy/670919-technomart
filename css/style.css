@@ -2,10 +2,13 @@
 
 
 body {
+  margin: 0px;
+  padding: 0px;
   background-color: #ffffff;
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 17px;
   line-height: 17px;
+
 }
 
 a {
