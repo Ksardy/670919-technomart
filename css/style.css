@@ -1152,7 +1152,7 @@ a.private__name:active {
 }
 
 .modal-write-searchus input[type="text"],
-.modal-write-searchus input[type="e-mail"],
+.modal-write-searchus input[type="email"],
 .modal-write-searchus textarea {
   color: #c2c2c2;
 
@@ -1168,13 +1168,13 @@ a.private__name:active {
 }
 
 .modal-write-searchus input[type="text"]:hover,
-.modal-write-searchus input[type="e-mail"]:hover,
+.modal-write-searchus input[type="email"]:hover,
 .modal-write-searchus textarea:hover {
   border: 2px solid #b5b5b5;
 }
 
 .modal-write-searchus input[type="text"]:focus,
-.modal-write-searchus input[type="e-mail"]:focus,
+.modal-write-searchus input[type="email"]:focus,
 .modal-write-searchus textarea:focus {
   border: 2px solid #ee3643;
 }
@@ -1189,7 +1189,7 @@ a.private__name:active {
 
 
 .modal-write-searchus input[type="text"],
-.modal-write-searchus input[type="e-mail"] {
+.modal-write-searchus input[type="email"] {
 
   width: 216px;
 }
@@ -1274,6 +1274,9 @@ a.private__name:active {
   box-shadow: 0 0 20px 0;
 }
 
+.modal-map iframe{
+  border-width: 0px;
+}
 /*  Ãâ€ÃÂ¾ÃÂ±ÃÂ°ÃÂ²ÃÂ»ÃÂµÃÂ½ ÃÂ² ÃÂ¼ÃÂ°ÃÂ³ÃÂ°ÃÂ·ÃÂ¸ÃÂ½  */
 
 .modal-shop {
