@@ -378,6 +378,7 @@ a.private__name:active {
 }
 
 .header-contact {
+  position: relative;
   display: block;
   box-sizing: border-box;
   width: 266px;
@@ -389,6 +390,15 @@ a.private__name:active {
   border: 3px solid #ffffff;
   font-size: 21px;
   line-height: 21px;
+}
+
+.header-contact::before {
+  content: "";
+  position: absolute;
+  left: 11px;
+  width: 20px;
+  height: 20px;
+  background: url("../img/icon-phone.svg");
 }
 
 .header-adress {
