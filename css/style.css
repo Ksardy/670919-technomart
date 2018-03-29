@@ -806,7 +806,7 @@ a.private__name:active {
 }
 
 .button-shop_one {
-  background-image: url("../img/basket-icon.svg") no-repeat 0 0;
+  background: url("../img/basket-icon.svg") no-repeat 0 0;
 }
 
 .button-shop_one:hover {
@@ -995,10 +995,6 @@ a.private__name:active {
 
   line-height: 24px;
 
-}
-
-.main-informat__company:nth-last-of-type p {
-  margin-bottom: 20px;
 }
 
 .main-informat__company ul {
@@ -1587,7 +1583,6 @@ fieldset .price-filter {
   top: 20px;
   left: 48%;
   height: 2px;
-  w;
   width: 9px;
   background-color: #000000;
 }
@@ -1834,12 +1829,6 @@ fieldset .price-filter {
   margin-right: 10px;
 }
 
-
-font-size: 13px;
-
-line-height: 18px;
-
-}
 
 .pagination-item a:active {
   color: #000000;
