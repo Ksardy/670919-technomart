@@ -1,6 +1,8 @@
 
 
 
+
+
 body {
   margin: 0px;
   padding: 0px;
@@ -226,6 +228,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .user_link li {
   display: inline-block;
+  align-items: baseline;
 }
 
 .private__checkout {
@@ -532,13 +535,7 @@ a.private__name:active {
   line-height: 24px;
 }
 
-/*  ÃÅ¡ÃÂ½ÃÂ¾ÃÂ¿ÃÂºÃÂ¸ */
-
-.main-offers-button {
-  /* display: block; */
-  /* text-align: center; */
-  /* color: #ffffff; */
-}
+/* */
 
 .main-offers-button {
   display: block;
@@ -546,13 +543,12 @@ a.private__name:active {
   text-transform: uppercase;
   color: #ffffff;
   font-size: 14px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 3px;
   line-height: 18px;
-  width: 133px;
+  width: 135px;
   margin-left: 1px;
-  padding-top: 10px;
-  padding-bottom: 11px;
+  padding-top: 11px;
+  padding-bottom: 12px;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -776,8 +772,6 @@ a.private__name:active {
   display: block;
 }
 
-
-
 .button-shop_two,
 .button-shop_one {
   display: block;
@@ -806,7 +800,17 @@ a.private__name:active {
 }
 
 .button-shop_one {
-  background: url("../img/basket-icon.svg") no-repeat 0 0;
+   position: relative;
+}
+
+.button-shop_one::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    background: url("../img/basket.svg") no-repeat 0 0;
+    opacity: 0.3;
 }
 
 .button-shop_one:hover {
@@ -815,12 +819,19 @@ a.private__name:active {
   background-color: #5fbb2d;
 }
 
+.button-shop_one:hover::before {
+    opacity: 1;
+    
+}
+
 .button-shop_one:active {
   border: 3px solid #518534;
   background-color: #518534;
-
 }
 
+.button-shop_one:active::before {
+    opacity: 0.8;  
+} 
 
 .button-shop_two:hover {
   border: 3px solid #32425c;
@@ -1278,6 +1289,7 @@ a.private__name:active {
 
 .modal-shop__button .button {
   display: inline-block;
+    align-items: baseline;
   font-size: 14px;
   line-height: 18px;
   box-sizing: border-box;
@@ -2362,7 +2374,7 @@ main .container {
   justify-content: space-between;
 }
 
-/*  ÃÅ“ÃÂ¾ÃÂ´ÃÂ°ÃÂ»ÃÂºÃÂ° */
+/*  */
 
 .modal-write {
   width: 620px;
@@ -2372,7 +2384,7 @@ main .container {
   padding-bottom: 37px;
 }
 
-/*  ÃÅ¡ÃÂ°Ã‘â€šÃÂ°ÃÂ»ÃÂ¾ÃÂ³ */
+/*   */
 
 .breadcrumbs {
   order: -1;
@@ -2582,6 +2594,7 @@ h1.lead {
   position: relative;
 
   display: inline-block;
+  align-items: baseline;
   width: 10px;
   height: 10px;
   padding: 6px;
