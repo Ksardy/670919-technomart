@@ -2244,6 +2244,8 @@ body {
 
 .main-navigation {
   margin-bottom: 39px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main-navigation .container {
